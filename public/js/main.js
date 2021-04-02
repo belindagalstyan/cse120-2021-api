@@ -39,7 +39,7 @@ function deleteData(id) {
 
     $.ajax({
         type: 'POST',
-        url: "https://cse120-2021-api-belinda.herokuapp.com/data/delete",
+        url: "/data/delete",
         data: tmp,
         cache: false,
         dataType : 'json',
@@ -63,7 +63,7 @@ function saveData() {
 
     $.ajax({
         type: 'POST',
-        url: "https://cse120-2021-api-belinda.herokuapp.com/data",
+        url: "/data",
         data: tmp,
         cache: false,
         dataType : 'json',
