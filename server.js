@@ -88,7 +88,7 @@ app.post('/data/update', function (req, res) {
     client.db('cse120-2021-db').collection('books').insertOne(req.body)
       .then(result => {
         console.log(result)
-        res.send({"message":"Added"});
+        res.send({"message":"Updated"});
       })
       .catch(error => console.error(error))
   })
