@@ -249,3 +249,7 @@ function toggleBookData() {
     bookData.style.display = "block";
   }
 }
+
+function handleFullNameEdit(){
+ bookForm.fullname=document.getElementById("fullname").value;
+}
