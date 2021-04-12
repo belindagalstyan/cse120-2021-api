@@ -250,28 +250,6 @@ function saveData() {
   });
 }
 
-function UpdateData(e){
-  	console.log(bookForm);
-	e.preventDefault();
-
-  $.ajax({
-    type: 'POST',
-    url: "https://cse-120-2021-api-belinda.herokuapp.com/data/update",
-    data: bookForm,
-    cache: false,
-    dataType : 'json',
-    success: function (data) {
-      console.log("successfully editted");
-    },
-    error: function (xhr) {
-      console.error("Error in editting", xhr);
-    },
-    complete: function () {
-      console.log("Complete");  
-    }
-  });  
-}
-
 function loadExistingData() {
   myTennisData = [];
   myBookData = [];
@@ -385,7 +363,7 @@ function toggleBookData() {
   }
 }
 
-/*function UpdateData(e){
+function UpdateData(e){
   console.log(bookForm)
   bookForm.id=document.getElementById("_id").value;
   bookForm.fullname=document.getElementById("fullname").value;
