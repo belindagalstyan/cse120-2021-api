@@ -115,6 +115,29 @@ function saveData() {
   });
 }
 
+function UpdateData(e){
+  var tmp = {
+        "id": id
+    }
+
+  $.ajax({
+    type: 'POST',
+    url: "https://cse-120-2021-api-belinda.herokuapp.com/data/update",
+    data: tmp,
+    cache: false,
+    dataType : 'json',
+    success: function (data) {
+      console.log("successfully editted");
+    },
+    error: function (xhr) {
+      console.error("Error in editting", xhr);
+    },
+    complete: function () {
+      console.log("Complete");  
+    }
+  });  
+}
+
 function loadExistingData() {
   myTennisData = [];
   myBookData = [];
