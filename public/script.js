@@ -116,9 +116,8 @@ function saveData() {
 }
 
 function UpdateData(e){
-  var tmp = {
-        "id": id
-    }
+  tmp.id=document.getElementById("_id").value;
+  e.preventDefault();
 
   $.ajax({
     type: 'POST',
