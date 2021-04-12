@@ -251,14 +251,13 @@ function saveData() {
 }
 
 function UpdateData(e){
-  var tmp = {
-        "id": id
-    }
+  e.preventDefault();
+  console.log(bookForm);
 
   $.ajax({
     type: 'POST',
     url: "https://cse-120-2021-api-belinda.herokuapp.com/data/update",
-    data: tmp,
+    data: bookForm,
     cache: false,
     dataType : 'json',
     success: function (data) {
@@ -386,7 +385,7 @@ function toggleBookData() {
   }
 }
 
-function UpdateData(e){
+/*function UpdateData(e){
   console.log(bookForm)
   bookForm.id=document.getElementById("_id").value;
   bookForm.fullname=document.getElementById("fullname").value;
