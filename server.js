@@ -83,7 +83,6 @@ app.post('/data/update', function (req, res) {
   client.connect()
   .then(client => {
     let id = req.body.id;
-    let newValue = req.body.value;
     const query = { "_id": ObjectId(id)};
     client.db('cse120-2021-db').collection('books').insertOne(req.body)
       .then(result => {
