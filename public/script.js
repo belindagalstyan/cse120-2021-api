@@ -116,8 +116,9 @@ function saveData() {
 }
 
 function UpdateData(e){
-  bookForm.id=document.getElementById("_id").value;
-  e.preventDefault();
+  var tmp = {
+        "id": id
+    }
 
   $.ajax({
     type: 'POST',
