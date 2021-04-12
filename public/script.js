@@ -251,8 +251,8 @@ function saveData() {
 }
 
 function UpdateData(e){
-  e.preventDefault();
-  console.log(bookForm);
+  	console.log(bookForm);
+	e.preventDefault();
 
   $.ajax({
     type: 'POST',
