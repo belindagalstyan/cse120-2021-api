@@ -1,4 +1,4 @@
-var bookForm = {
+/*var bookForm = {
   "project" : "Books",
   "owner" : "Belinda Galstyan",
   "fullname" : "",
@@ -131,7 +131,7 @@ function HandleGenreChange() {
 
 function HandleAgerestrchange() {
   bookForm.agerestr = document.getElementById("agerestr").value
-}
+}*/
 
 var loadedData = [];
 
