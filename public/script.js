@@ -363,7 +363,7 @@ function toggleBookData() {
   }
 }
 
-function updateData(e) {
+function UpdateData(e) {
   e.preventDefault();
   var updatedBook = {};
   updatedBook.id = document.getElementById("_id").value;
@@ -372,7 +372,7 @@ function updateData(e) {
  
       $.ajax({
       type: 'POST',
-      url: "https://cse-120-2021-api-belinda.herokuapp.com/data/update",
+      url: "https://cse120-2021-api-belinda.herokuapp.com/data/update",
       data: updatedBook,
       cache: false,
       dataType : 'json',
