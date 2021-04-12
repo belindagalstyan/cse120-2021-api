@@ -363,13 +363,33 @@ function toggleBookData() {
   }
 }
 
-function UpdateData(e){
-  console.log(bookForm)
-  bookForm.id=document.getElementById("_id").value;
-  bookForm.fullname=document.getElementById("fullname").value;
+function updateData(e) {
+  e.preventDefault();
+  var updatedBook = {};
+  updatedBook.id = document.getElementById("_id").value;
+  updatedBook.fullName = document.getElementById("fullname").value;
+  updatedBook.title = document.getElementById("title").value;
+ 
+      $.ajax({
+      type: 'POST',
+      url: "https://cse-120-2021-api-belinda.herokuapp.com/data/update",
+      data: updatedBook,
+      cache: false,
+      dataType : 'json',
+      success: function (data) {
+        console.log("success");
+      },
+      error: function (xhr) {
+        console.error("Error in post", xhr);
+      },
+      complete: function () {
+        console.log("Complete");  
+      }
+    });
 }
+
 	
-function handleFullNameEdit(){
+/*function handleFullNameEdit(){
  bookForm.fullname=document.getElementById("fullname").value;
  e.preventDefault();
   $.ajax({
