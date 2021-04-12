@@ -1,3 +1,138 @@
+var bookForm = {
+  "project" : "Books",
+  "owner" : "Belinda Galstyan",
+  "fullname" : "",
+  "title" : "",
+  "author" : "",
+  "colour" : "",
+  "covertype" : "",
+  "othercovervalue" : "",
+  "nofpages" : "",
+  "price" : "",
+  "currency" : "",
+  "language" : "",
+  "otherlanguagevalue" : "",
+  "orglanguage" : "",
+  "otherorglanguagevalue" : "",
+  "edition" : "",
+  "dimensions" : "",
+  "publisher" : "",
+  "date" : "",
+  "orgdate" : "",
+  "genre" : "",
+  "agerestr" : ""
+}
+
+function HandleFullnameChange() {
+  bookForm.fullname = document.getElementById("fullname").value
+}
+
+function HandleTitleChange() {
+  bookForm.title = document.getElementById("title").value
+}
+
+function HandleAuthorChange() {
+  bookForm.author = document.getElementById("author").value
+}
+
+function HandleColourchange() {
+  bookForm.colour = document.getElementById("colour").value
+}
+
+function HandleCovertypechange(e) {
+  bookForm.covertype=e.target.value;
+  if (bookForm.covertype!="other") {
+    bookForm.othercovervalue="";
+    document.getElementById("othercovertype").style.display="none";
+  }
+  else{
+    document.getElementById("othercovertype").style.display="block";
+  }
+}
+
+function HandleCovermaterialchange() {
+  if (bookForm.covertype == "other") {
+    bookForm.othercovervalue = document.getElementById("othercovertype").value;
+    document.getElementById("othercovertype").style.display="block";
+  }
+}
+
+function HandleNofpageschange() {
+  bookForm.nofpages = document.getElementById("nofpages").value
+}
+
+function HandlePricechange() {
+  bookForm.price = document.getElementById("price").value
+}
+
+function HandleCurrencyChange() {
+  bookForm.currency = document.getElementById("currency").value
+}
+
+function Handlelanguagechange(e) {
+  bookForm.language=e.target.value;
+  if (bookForm.language!="other") {
+    bookForm.otherlanguagevalue="";
+    document.getElementById("otherlanguage").style.display="none";
+  }
+  else{
+    document.getElementById("otherlanguage").style.display="block";
+  }
+}
+
+function Handleotherlanguagechange() {
+  if (bookForm.language == "other") {
+    bookForm.otherlanguagevalue = document.getElementById("otherlanguage").value;
+    document.getElementById("otherlanguage").style.display="block";
+  }
+}
+
+function HandleOrglanguagechange(e) {
+  bookForm.orglanguage=e.target.value;
+  if (bookForm.orglanguage!="other") {
+    bookForm.otherorglanguagevalue="";
+    document.getElementById("otherorglanguage").style.display="none";
+  }
+  else{
+    document.getElementById("otherorglanguage").style.display="block";
+  }
+}
+
+function HandleOrglanguagetextchange() {
+  if (bookForm.orglanguage == "other") {
+    bookForm.otherorglanguagevalue = document.getElementById("otherorglanguage").value;
+    document.getElementById("otherorglanguage").style.display="block";
+  }
+}
+
+function HandleEditionChange() {
+  bookForm.edition = document.getElementById("edition").value
+}
+
+function HandleDimensionsChange() {
+  bookForm.dimensions = document.getElementById("dimensions").value
+}
+
+function HandlePublisherChange() {
+  bookForm.publisher = document.getElementById("publisher").value
+}
+
+function HandleDatechange() {
+  bookForm.date = document.getElementById("date").value
+}
+
+function HandleOrgdatechange() {
+  bookForm.orgdate = document.getElementById("orgdate").value
+}
+
+function HandleGenreChange() {
+  bookForm.genre = document.getElementById("genre").value
+}
+
+function HandleAgerestrchange() {
+  bookForm.agerestr = document.getElementById("agerestr").value
+}
+
 var loadedData = [];
 
 function loadEditItem() {
@@ -251,6 +386,29 @@ function toggleBookData() {
   }
 }
 
+function UpdateData(e){
+  console.log(bookForm)
+  bookForm.id=document.getElementById("_id").value;
+  bookForm.fullname=document.getElementById("fullname").value;
+}
+	
 function handleFullNameEdit(){
  bookForm.fullname=document.getElementById("fullname").value;
+ e.preventDefault();
+  $.ajax({
+    type: 'POST',
+    url: "https://cse-120-2021-api-belinda.herokuapp.com/data/update",
+    data: bookForm,
+    cache: false,
+    dataType : 'json',
+    success: function (data) {
+      console.log("successfully editted");
+    },
+    error: function (xhr) {
+      console.error("Error in editting", xhr);
+    },
+    complete: function () {
+      console.log("Complete");  
+    }
+  }); 
 }
