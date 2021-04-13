@@ -1,6 +1,3 @@
-body {
-	background-color: #lightblue;
-}
 
 div.item {
 	min-width: 200px;
@@ -10,7 +7,7 @@ div.item {
 	margin: 10px;
 	padding: 10px;
 	position: relative;
-  border: 2px solid black;
+  border: 2px solid lightblue;
   border-radius: 10px;
 }
 
@@ -19,7 +16,7 @@ div.item {
 }
 
 #bookDataContainer div.item {
-  background-color: mistyrose ;
+  background-color: solid mistyrose ;
 }
 
 #tennisDataContainer {
