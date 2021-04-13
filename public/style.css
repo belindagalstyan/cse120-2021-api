@@ -7,16 +7,16 @@ div.item {
 	margin: 10px;
 	padding: 10px;
 	position: relative;
-  border: 2px solid lightblue;
+  border: 2px solid black;
   border-radius: 10px;
 }
 
 #tennisDataContainer div.item {
-  background-color: plum;
+  background-color: lightblue;
 }
 
 #bookDataContainer div.item {
-  background-color: solid mistyrose ;
+  background-color: mistyrose ;
 }
 
 #tennisDataContainer {
