@@ -5,26 +5,26 @@ function loadEditItem() {
     editItem = JSON.parse(localStorage.getItem("editItem"));
     console.log(editItem);
     document.getElementById("_id").value = editItem["_id"];
-    document.getElementById("title").value = editItem["title"];
-    document.getElementById("fullname").value = editItem["fullname"];   
-    document.getElementById("author").value = editItem["author"];
-    document.getElementById("colour").value = editItem["colour"];
-    document.getElementById("covertype").value = editItem["covertype"];
-    document.getElementById("othercovervalue").value = editItem["othercovervalue"];      
-    document.getElementById("nofpages").value = editItem["nofpages"];
-    document.getElementById("price").value = editItem["price"];
-    document.getElementById("currency").value = editItem["currency"];
-    document.getElementById("language").value = editItem["language"];
-    document.getElementById("otherlanguagevalue").value = editItem["otherlanguagevalue"];
-    document.getElementById("orglanguage").value = editItem["orglanguage"];
-    document.getElementById("otherorglanguagevalue").value = editItem["otherorglanguagevalue"];
-    document.getElementById("edition").value = editItem["edition"];
-    document.getElementById("dimensions").value = editItem["dimensions"];
-    document.getElementById("publisher").value = editItem["publisher"];
-    document.getElementById("date").value = editItem["date"];
-    document.getElementById("orgdate").value = editItem["orgdate"];
-    document.getElementById("genre").value = editItem["genre"];
-    document.getElementById("agerestr").value = editItem["agerestr"];
+    document.getElementById("titleForm").value = editItem["title"];
+    document.getElementById("fullNameForm").value = editItem["fullname"];   
+    document.getElementById("authorForm").value = editItem["author"];
+    document.getElementById("colourForm").value = editItem["colour"];
+    document.getElementById("coverTypeForm").value = editItem["covertype"];
+    document.getElementById("otherCoverValueForm").value = editItem["othercovervalue"];      
+    document.getElementById("nOfPagesForm").value = editItem["nofpages"];
+    document.getElementById("priceForm").value = editItem["price"];
+    document.getElementById("currencyForm").value = editItem["currency"];
+    document.getElementById("languageForm").value = editItem["language"];
+    document.getElementById("otherLanguageValueForm").value = editItem["otherlanguagevalue"];
+    document.getElementById("orgLanguageForm").value = editItem["orglanguage"];
+    document.getElementById("otherOrgLanguageValueForm").value = editItem["otherorglanguagevalue"];
+    document.getElementById("editionForm").value = editItem["edition"];
+    document.getElementById("dimensionsForm").value = editItem["dimensions"];
+    document.getElementById("publisherForm").value = editItem["publisher"];
+    document.getElementById("dateForm").value = editItem["date"];
+    document.getElementById("orgDateForm").value = editItem["orgdate"];
+    document.getElementById("genreForm").value = editItem["genre"];
+    document.getElementById("ageRestrForm").value = editItem["agerestr"];
 }
 
 function loadTennisEditItem() {
