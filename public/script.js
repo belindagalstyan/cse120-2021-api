@@ -54,9 +54,9 @@ function editData(id) {
             localStorage = window.localStorage;
             localStorage.setItem('editItem', JSON.stringify(item));
             if (item["project"] == "Tennis") {
-            document.location  = "tennisForm.html"; 
+            document.location  = "editTennisForm.html"; 
             } else {
-            document.location  = "form.html"; 
+            document.location  = "editForm.html"; 
             }
         }
     })
