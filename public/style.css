@@ -2,17 +2,17 @@ div.item {
 	min-width: 200px;
 	width: 20%;
 	height: 450px;
-	background-color: antiquewhite ;
+	background-color: lightblue ;
   float: left;
 	margin: 15px;
-	padding: 15px;
+	padding: 5px;
 	position: relative;
-  border: 2px solid black;
+  border: 2px solid white;
   border-radius: 10px;
 }
 
 #tennisDataContainer div.item {
-  background-color: lemonchiffon;
+  background-color: plum;
 }
 
 #bookDataContainer div.item {
