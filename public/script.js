@@ -32,16 +32,16 @@ function loadTennisEditItem() {
     editItem = JSON.parse(localStorage.getItem("editItem"));
     console.log(editItem);
     document.getElementById("_id").value = editItem["_id"];
-    document.getElementById("fullname").value = editItem["fullname"];
-    document.getElementById("mail").value = editItem["mail"]; 
-    document.getElementById("date").value = editItem["date"];
-    document.getElementById("time").value = editItem["time"];
-    document.getElementById("frequency").value = editItem["frequency"];
-    document.getElementById("otherfrequencyvalue").value = editItem["otherfrequencyvalue"];      
-    document.getElementById("colour").value = editItem["colour"];
-    document.getElementById("favplayer").value = editItem["favplayer"];
-    document.getElementById("competition").value = editItem["competition"];
-    document.getElementById("yes").value = editItem["yes"];
+    document.getElementById("fullNameForm").value = editItem["fullname"];
+    document.getElementById("mailForm").value = editItem["mail"]; 
+    document.getElementById("dateForm").value = editItem["date"];
+    document.getElementById("timeForm").value = editItem["time"];
+    document.getElementById("frequencyForm").value = editItem["frequency"];
+    document.getElementById("otherFrequencyValueForm").value = editItem["otherfrequencyvalue"];      
+    document.getElementById("colourForm").value = editItem["colour"];
+    document.getElementById("favPlayerForm").value = editItem["favplayer"];
+    document.getElementById("competitionForm").value = editItem["competition"];
+    document.getElementById("yesForm").value = editItem["yes"];
 }
 
 function editData(id) {
