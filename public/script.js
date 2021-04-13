@@ -232,9 +232,27 @@ function UpdateData(e) {
   e.preventDefault();
   var updatedBook = {};
   updatedBook.id = document.getElementById("_id").value;
-  updatedBook.fullName = document.getElementById("fullname").value;
+  updatedBook.fullname = document.getElementById("fullNameForm").value;
   updatedBook.title = document.getElementById("title").value;
- 
+  updatedBook.author = document.getElementById("authorForm").value;
+  updatedBook.colour = document.getElementById("colourForm").value;
+  updatedBook.covertype = document.getElementById("coverTypeForm").value;
+  updatedBook.othercovervalue = document.getElementById("otherCoverValueForm").value;
+  updatedBook.nofpages = document.getElementById("nOfPagesForm").value;
+  updatedBook.price = document.getElementById("priceForm").value;
+  updatedBook.currency = document.getElementById("currencyForm").value;
+  updatedBook.language = document.getElementById("languageForm").value;	
+  updatedBook.otherlanguagevalue = document.getElementById("otherLanguageValueForm").value;	
+  updatedBook.orglanguage = document.getElementById("orgLanguageForm").value;	
+  updatedBook.otherorglanguagevalue = document.getElementById("otherOrgLanguageValueForm").value;	
+  updatedBook.edition = document.getElementById("editionForm").value;	
+  updatedBook.dimensions = document.getElementById("dimensionsForm").value;	
+  updatedBook.publisher = document.getElementById("publisherForm").value;	
+  updatedBook.date = document.getElementById("dateForm").value;	
+  updatedBook.orgdate = document.getElementById("orgDate").value;	
+  updatedBook.genre = document.getElementById("genreForm").value;	
+  updatedBook.agerestr = document.getElementById("ageRestrForm").value;	
+	
       $.ajax({
       type: 'POST',
       url: "/data/update",
