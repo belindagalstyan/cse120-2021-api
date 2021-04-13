@@ -27,10 +27,6 @@ div.item {
   display: none;
 }
 
-#otherDataContainer{
-  display: none;
-}
-
 div.item button {
 	position: absolute;
 	bottom: 10px;
