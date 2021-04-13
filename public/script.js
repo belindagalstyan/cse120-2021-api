@@ -132,13 +132,10 @@ function loadExistingData() {
             } else {
               myBookData.push(elem);
             }
-          } else {
-            otherData.push(elem);
           }
         })
         displayData(myTennisData, "tennisDataContainer");
         displayData(myBookData, "bookDataContainer");
-        displayData(otherData, "otherDataContainer");
       },
       error : function(data) {
           console.log("Error")
@@ -201,14 +198,6 @@ function displayData(data, containerDivName) {
 
 }
 
-function toggleOtherData() {
-  var otherData = document.getElementById("otherDataContainer");
-  if (otherData.style.display == "block") {
-    otherData.style.display = "none";
-  } else {
-    otherData.style.display = "block";
-  }
-}
 
 function toggleTennisData() {
   var tennisData = document.getElementById("tennisDataContainer");
