@@ -270,3 +270,38 @@ function UpdateData(e) {
       }
     });
 }
+
+
+function UpdateTennisData(e) {
+  e.preventDefault();
+  var updatedBook = {};
+  updatedBook.id = document.getElementById("_id").value;
+  updatedBook.fullname = document.getElementById("fullNameForm").value;
+  updatedBook.mail = document.getElementById("mailForm").value;
+  updatedBook.date = document.getElementById("dateForm").value;
+  updatedBook.time = document.getElementById("timeForm").value;
+  updatedBook.frequency = document.getElementById("frequencyForm").value;
+  updatedBook.otherfrequencyvalue = document.getElementById("otherFrequencyValueForm").value;
+  updatedBook.colour = document.getElementById("colourForm").value;
+  updatedBook.favplayer = document.getElementById("favPlayerForm").value;
+  updatedBook.competition = document.getElementById("competitionForm").value;
+  updatedBook.yes = document.getElementById("yesForm").value;
+	
+      $.ajax({
+      type: 'POST',
+      url: "/data/update",
+      data: updatedBook,
+      cache: false,
+      dataType : 'json',
+      success: function (data) {
+        console.log("success");
+      },
+      error: function (xhr) {
+        console.error("Error in post", xhr);
+      },
+      complete: function () {
+        console.log("Complete");  
+      }
+    });
+}
+
