@@ -263,23 +263,23 @@ function UpdateData(e) {
 
 function UpdateTennisData(e) {
   e.preventDefault();
-  var updatedBook = {};
-  updatedBook.id = document.getElementById("_id").value;
-  updatedBook.fullname = document.getElementById("fullNameForm").value;
-  updatedBook.mail = document.getElementById("mailForm").value;
-  updatedBook.date = document.getElementById("dateForm").value;
-  updatedBook.time = document.getElementById("timeForm").value;
-  updatedBook.frequency = document.getElementById("frequencyForm").value;
-  updatedBook.otherfrequencyvalue = document.getElementById("otherFrequencyValueForm").value;
-  updatedBook.colour = document.getElementById("colourForm").value;
-  updatedBook.favplayer = document.getElementById("favPlayerForm").value;
-  updatedBook.competition = document.getElementById("competitionForm").value;
-  updatedBook.yes = document.getElementById("yesForm").value;
+  var updatedTennis = {};
+  updatedTennis.id = document.getElementById("_id").value;
+  updatedTennis.fullname = document.getElementById("fullNameForm").value;
+  updatedTennis.mail = document.getElementById("mailForm").value;
+  updatedTennis.date = document.getElementById("dateForm").value;
+  updatedTennis.time = document.getElementById("timeForm").value;
+  updatedTennis.frequency = document.getElementById("frequencyForm").value;
+  updatedTennis.otherfrequencyvalue = document.getElementById("otherFrequencyValueForm").value;
+  updatedTennis.colour = document.getElementById("colourForm").value;
+  updatedTennis.favplayer = document.getElementById("favPlayerForm").value;
+  updatedTennis.competition = document.getElementById("competitionForm").value;
+  updatedTennis.yes = document.getElementById("yesForm").value;
 	
       $.ajax({
       type: 'POST',
       url: "/data/update",
-      data: updatedBook,
+      data: updatedTennis,
       cache: false,
       dataType : 'json',
       success: function (data) {
