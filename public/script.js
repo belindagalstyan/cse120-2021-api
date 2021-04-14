@@ -222,7 +222,7 @@ function UpdateData(e) {
   var updatedBook = {};
   updatedBook.id = document.getElementById("_id").value;
   updatedBook.fullname = document.getElementById("fullNameForm").value;
-  updatedBook.title = document.getElementById("title").value;
+  updatedBook.title = document.getElementById("titleForm").value;
   updatedBook.author = document.getElementById("authorForm").value;
   updatedBook.colour = document.getElementById("colourForm").value;
   updatedBook.covertype = document.getElementById("coverTypeForm").value;
