@@ -238,7 +238,7 @@ function UpdateData(e) {
   updatedBook.dimensions = document.getElementById("dimensionsForm").value;	
   updatedBook.publisher = document.getElementById("publisherForm").value;	
   updatedBook.date = document.getElementById("dateForm").value;	
-  updatedBook.orgdate = document.getElementById("orgDate").value;	
+  updatedBook.orgdate = document.getElementById("orgDateForm").value;	
   updatedBook.genre = document.getElementById("genreForm").value;	
   updatedBook.agerestr = document.getElementById("ageRestrForm").value;	
 	
