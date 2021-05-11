@@ -119,7 +119,6 @@ function saveData() {
 function loadExistingData() {
   myTennisData = [];
   myBookData = [];
-  otherData = [];
   $.ajax({
       type : "GET",
       url : "https://cse120-2021-api-belinda.herokuapp.com/data",
