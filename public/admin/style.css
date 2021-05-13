@@ -1,6 +1,6 @@
 body{
   font-family: Trirong;
-  text-shadow: 3px 3px 3px  rgb(89, 89, 89);
+  text-shadow: 3px 3px 3px  rgba(27, 1, 94, 0.473);
   background-image: url(https://www.wallpapers4u.org/wp-content/uploads/city_night_street_lights_cars_59099_1920x1080.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;  
@@ -25,11 +25,11 @@ div.item {
 }
 
 #tennisDataContainer div.item {
-  background-color: lightblue;
+  background-color: rgb(158, 148, 128);
 }
 
 #bookDataContainer div.item {
-  background-color: mistyrose ;
+  background-color: rgb(230, 218, 195);
 }
 
 #tennisDataContainer {
