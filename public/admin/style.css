@@ -1,3 +1,17 @@
+body{
+  font-family: Trirong;
+  text-shadow: 3px 3px 3px  rgba(27, 1, 94, 0.473);
+  background-image: url(https://worldstrides.com/wp-content/uploads/2020/05/EmpireState.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+  margin-left: auto;
+  margin-right: auto;
+  width: 500px;
+  color: rgb(252, 223, 165);
+ 
+}
+
 div.item {
 	min-width: 200px;
 	width: 20%;
