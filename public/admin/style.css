@@ -73,8 +73,8 @@ span.undefined {
   color: rgb(252, 223, 165);
   cursor: pointer;
   position: fixed;
-  bottom: 0;
-  right: 0;
+  bottom: 30px;
+  right: 20px;
 }
 
 h1 {
