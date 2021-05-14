@@ -95,6 +95,7 @@ console.log(tennisForm);
     dataType : 'json',
     success: function (data) {
       console.log("success");
+      document.location="https://cse120-2021-api-belinda.herokuapp.com/tennis/thankyou.html";
     },
     error: function (xhr) {
       console.error("Error in post", xhr);
