@@ -1,17 +1,14 @@
 body {
   background-image: url("https://wallpaperaccess.com/full/51359.jpg");
-  background-color:bisque;
-  background-position: center; 
-  background-repeat: no-repeat; 
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
   background-size: cover;
-  text-align: center;
-  font-size: x-large;
-  color: lightblue;
   margin-left: auto;
   margin-right: auto;
-  width: 800px;
-  padding: 30px;
-  font-family: "Sofia", sans-serif;
+  width: 500px;
+  color: rgb(252, 223, 165);
+  font-family: Trirong;
+  text-shadow: 3px 3px 3px  rgba(27, 1, 94, 0.473);
 }
 
 div {
