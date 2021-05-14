@@ -137,7 +137,7 @@ function HandleAgerestrchange() {
   bookForm.agerestr = document.getElementById("agerestr").value
 }
 
-function validateFormData() {
+function validateBookFormData() {
   var isFormValid = true;
   var keys = Object.keys(bookForm);
   keys.forEach(key => {
@@ -152,7 +152,7 @@ function validateFormData() {
 }
 
 function SaveData(e) {
-  if(validateFormData() == false) {
+  if(validateBookFormData() == false) {
     	return;
   } else {
   console.log(bookForm);
