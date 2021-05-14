@@ -139,7 +139,7 @@ function HandleAgerestrchange() {
 
 function validateFormData() {
   var isFormValid = true;
-  var keys = Object.keys(tennisForm);
+  var keys = Object.keys(bookForm);
   keys.forEach(key => {
       if (requiredFields.indexOf(key) > -1 && bookForm[key] == "") { console.log(key, " is a required field, please add a value") 
       if(document.getElementById(key)) {
