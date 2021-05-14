@@ -12,13 +12,13 @@ body {
 }
 
 div {
-  text-align: center
+  text-align: center;
   font-size: 50pt
 }
 
 h2 {
   font-family: cursive;
-  background-color: darkblue;
+  background-color: rgb(252, 223, 165);
   color: lightblue;
   text-align: center;
   font-size: xx-large;
@@ -26,7 +26,15 @@ h2 {
 
 h3 {
   font-family: fantasy;
-  background-color: azure;
+  background-color: rgb(252, 223, 165);
+  color: darkblue;
+  text-align: center;
+  font-size: xx-large;
+}
+
+h4 {
+  font-family: fantasy;
+  background-color: rgb(252, 223, 165);
   color: darkblue;
   text-align: center;
   font-size: xx-large;
