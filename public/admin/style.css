@@ -62,3 +62,14 @@ span.item b {
 span.undefined {
 	color: red;
 }
+
+.backButton {
+  background-color: rgb(152,152,152);
+  border: none;
+  border-radius: 10px 10px;
+  padding: 15px;
+  font-size: 15px;
+  color: white;
+  cursor: pointer;
+  position: relative;
+}
