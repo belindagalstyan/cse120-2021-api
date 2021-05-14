@@ -71,5 +71,7 @@ span.undefined {
   font-size: 15px;
   color: white;
   cursor: pointer;
-  position: relative;
+  position: fixed;
+  top: 0;
+  right: 0;
 }
