@@ -13,15 +13,16 @@ body{
 }
 
 div.item {
-	min-width: 200px;
-	width: 20%;
-	height: 450px;
+  min-width: 200px;
+  width: 20%;
+  height: 450px;
   float: left;
-	margin: 10px;
-	padding: 10px;
-	position: relative;
+  margin: 10px;
+  padding: 10px;
+  position: relative;
   border: 2px solid black;
   border-radius: 10px;
+  text-align: center;
 }
 
 #tennisDataContainer div.item {
@@ -74,4 +75,9 @@ span.undefined {
   position: fixed;
   bottom: 0;
   center: 0;
+}
+
+h1 {
+ font-size: 30pt;
+ padding-top: 50px;
 }
