@@ -152,6 +152,9 @@ function validateFormData() {
 }
 
 function SaveData(e) {
+  if(validateFormData() == false) {
+    	return;
+  } else {
   console.log(bookForm);
 
   $.ajax({
