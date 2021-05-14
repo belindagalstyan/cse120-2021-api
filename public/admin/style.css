@@ -74,7 +74,7 @@ span.undefined {
   cursor: pointer;
   position: fixed;
   bottom: 0;
-  center: 0;
+  right: 0;
 }
 
 h1 {
