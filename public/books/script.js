@@ -1,3 +1,7 @@
+var requiredFields = [
+ "fullname", "title", "author", "nofpages", "publisher", "date", "genre" 
+]
+
 var bookForm = {
   "project" : "Books",
   "owner" : "Belinda Galstyan",
@@ -131,6 +135,20 @@ function HandleGenreChange() {
 
 function HandleAgerestrchange() {
   bookForm.agerestr = document.getElementById("agerestr").value
+}
+
+function validateFormData() {
+  var isFormValid = true;
+  var keys = Object.keys(tennisForm);
+  keys.forEach(key => {
+      if (requiredFields.indexOf(key) > -1 && bookForm[key] == "") { console.log(key, " is a required field, please add a value") 
+      if(document.getElementById(key)) {
+        document.getElementById(key).style.backgroundColor = "red"; 
+        isFormValid = false;
+      }
+    }   
+  })
+  return isFormValid;
 }
 
 function SaveData(e) {
