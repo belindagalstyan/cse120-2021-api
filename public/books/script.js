@@ -1,5 +1,5 @@
 var requiredFields = [
- "fullname", "title", "author", "nofpages", "publisher", "date", "genre" 
+ "fullname", "title", "author", "nofpages", "publisher", "date", "genre", 
 ]
 
 var bookForm = {
