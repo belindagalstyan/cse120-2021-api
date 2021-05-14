@@ -12,7 +12,6 @@ body {
 }
 
 div {
-  text-align: center;
   font-size: 50pt
 }
 
@@ -38,4 +37,18 @@ h4 {
   color: darkblue;
   text-align: center;
   font-size: xx-large;
+}
+
+.adminDiv {
+  background-color: rgba(173, 233, 233, 0.534);
+  border-radius: 20px;
+  border: 3px solid rgb(11, 11, 94);
+  padding:30px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-left: 20px;
+  text-align: inherit;
+  color: rgb(72, 25, 133);
+  text-shadow: 2px 2px rgb(196, 233, 255);
+  font-size: large; 
 }
