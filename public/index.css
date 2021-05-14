@@ -11,7 +11,7 @@ body {
   color: rgb(252, 223, 165);
 }
 
-div {
+.dashboard {
   font-size: 45pt;
   padding-top: 50px;
   text-allign: center;
