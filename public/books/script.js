@@ -144,6 +144,7 @@ function SaveData(e) {
     dataType : 'json',
     success: function (data) {
       console.log("success");
+      document.location="https://cse120-2021-api-belinda.herokuapp.com/books/thankyou.html";
     },
     error: function (xhr) {
       console.error("Error in post", xhr);
