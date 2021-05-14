@@ -1,4 +1,6 @@
 body {
+  font-family: Trirong;
+  text-shadow: 3px 3px 3px  rgba(27, 1, 94, 0.473);
   background-image: url("https://wallpaperaccess.com/full/51359.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;  
@@ -7,23 +9,7 @@ body {
   margin-right: auto;
   width: 500px;
   color: rgb(252, 223, 165);
-  font-family: Trirong;
-  text-shadow: 3px 3px 3px  rgba(27, 1, 94, 0.473);
 }
-
-div {
-  background-color: rgba(173, 233, 233, 0.534);
-  border-radius: 20px;
-  border: 3px solid rgb(11, 11, 94);
-  padding:30px;
-  margin-bottom: 20px;
-  margin-top: 20px;
-  margin-left: 20px;
-  text-align: inherit;
-  color: rgb(72, 25, 133);
-  text-shadow: 2px 2px rgb(196, 233, 255);
-  font-size: large; 
-} 
 
 h2 {
   font-family: cursive;
