@@ -250,7 +250,7 @@ function UpdateData(e) {
       dataType : 'json',
       success: function (data) {
         console.log("success");
-	window.location.href="https://cse-120-2021-api-belinda.herokuapp.com/admin/index.html";
+	window.location.href="https://cse120-2021-api-belinda.herokuapp.com/admin/index.html";
       },
       error: function (xhr) {
         console.error("Error in post", xhr);
@@ -285,7 +285,7 @@ function UpdateTennisData(e) {
       dataType : 'json',
       success: function (data) {
         console.log("success");
-	window.location.href="https://cse-120-2021-api-belinda.herokuapp.com/admin/index.html";
+	window.location.href="https://cse120-2021-api-belinda.herokuapp.com/admin/index.html";
       },
       error: function (xhr) {
         console.error("Error in post", xhr);
